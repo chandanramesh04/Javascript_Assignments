@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 8</title>
     <script>
-        const array1 = [a, b, c];
-        const array2 = [a, b, c];
+        const array1 = ['a', 'b', 'c'];
+        const array2 = [1, 2, 3];
+        const added_Array = array1.concat(array2);
+        function myFunc(added_Array) {
+            document.write(added_Array);
+        }
+        document.getElementById("display").innerHTML = myFunc(added_Array);
     </script>
 </head>
 
