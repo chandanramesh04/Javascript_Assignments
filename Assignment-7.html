@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Assignment 7</title>
+</head>
+
+<body>
+    <script>
+
+        function myFunc(value) {
+
+            var rupee = value * 74.28;
+
+            document.write("Rupees : " + rupee + "<br>");
+
+            var yen = value * 109.14;
+
+            document.write("Yen : " + yen + "<br>");
+
+            var euro = value * 0.84;
+
+            document.write("Euro : " + euro + "<br>");
+
+            var pound = value * 0.72;
+
+            document.write("Pound sterling :" + Math.round(pound));
+
+        }
+
+    </script>
+
+</body>
+<input id="currency" />
+<input type="submit" onclick="myFunc(document.getElementById('currency').value)" />
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <span>******</span>
+    <p id="stringDisplay"></p>
+    <span>******</span>
+    <script>
+        const numbers = ["Hello", "World", "in", "a", "frame"];
+        let sum = numbers.map(myFunction);
+
+        document.getElementById("stringDisplay").innerHTML = sum;
+
+        function myFunction(value) {
+            return "*" + value + "*<br/>";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script>
+        function calcSum(num) {
+            total = 0;
+            for (var i = 1; i <= num; i++) {
+                total += i;
+            }
+            return total;
+        }
+        function getData() {
+            value = document.getElementById("Number").value;
+            document.getElementById("result").innerHTML = "Total is " + calcSum(value);
+        }
+    </script>
+</head>
+
+<body>
+    <input id="Number" />
+    <input type="submit" onclick="getData()" />
+    <span id="result">
+    </span>
+</body>
+
+</html>
