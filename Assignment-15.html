@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15</title>
+</head>
+
+<body>
+    <h1>Bubble Sort</h1>
+    <div>
+        <span id="originalArray"></span>
+    </div>
+    <div>
+        <span id="sortedArray"></span>
+    </div>
+    <script>
+        const arr = [12, 73, 67, 987, 432, 44, 12, 346, 23, 86, 87, 34, 72, 28, 192, 673, 865, 34, 22, 18];
+        document.getElementById("originalArray").innerHTML = "Original Array :" + arr;
+        document.getElementById("sortedArray").innerHTML = "Sorted Array :" + bblSort(arr);
+        function bblSort(arr) {
+
+            for (var i = 0; i < arr.length; i++) {
+
+                // Last i elements are already in place  
+                for (var j = 0; j < (arr.length - i - 1); j++) {
+                    if (arr[j] > arr[j + 1]) {
+
+                        // If the condition is true then swap them
+                        var temp = arr[j]
+                        arr[j] = arr[j + 1]
+                        arr[j + 1] = temp
+                    }
+                }
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>
