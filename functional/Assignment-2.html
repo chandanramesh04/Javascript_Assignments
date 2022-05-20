@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <div>
+        <h3 id="result1"></h3>
+    </div>
+    <div>
+        <h3 id="result2"></h3>
+    </div>
+    <script>
+        document.write(f2(5));
+        var f1 = compose(double, square);
+        var f2 = compose(double, square);
+        function double(num) {
+            return num * 2;
+        }
+        function square(num) {
+            return num * num;
+        }
+        function compose(double, square) {
+            return (square(double(num)))
+        }
+    </script>
+</body>
+
+</html>

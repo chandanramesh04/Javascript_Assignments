@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <div>
+        <h3 id="display"></h3>
+    </div>
+    <script>
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+        }
+        Rectangle.prototype.getArea = function () {
+            return this.height * this.width;
+        };
+        const r = new Rectangle(46, 12);
+        document.getElementById("display").innerHTML = "Area of a rectangle : " + r.getArea();
+    </script>
+</body>
+
+</html>

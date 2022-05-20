@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+
+<body>
+    <div>
+        <h3 id="display1"></h3>
+    </div>
+    <div>
+        <h3 id="display2"></h3>
+    </div>
+    <script>
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+        }
+        const r = new Rectangle(40, 10);
+        const r2 = new Rectangle(60, 14);
+        document.getElementById("display1").innerHTML = "Rectangle : width=" + r.width + " and height=" + r.height;
+        document.getElementById("display2").innerHTML = "Rectangle : width=" + r2.width + " and height=" + r2.height;
+    </script>
+</body>
+
+</html>
